@@ -1,0 +1,17 @@
+
+body {
+    background: rgb(31,26,111);
+    background: linear-gradient(90deg, rgba(31,26,111,1) 0%, rgba(105,105,241,1) 35%, rgba(189,240,250,1) 100%);
+}
+
+.imagen_black {
+    width: 50%;
+    height: auto;
+    margin: 8% 25% 2%;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.contenedor_texto_black {
+    margin-bottom: 5%;
+}

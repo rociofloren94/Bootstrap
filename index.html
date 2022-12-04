@@ -7,26 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Deportes</title>
     <link href="./bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./styles.css" rel="stylesheet"/>
     
 </head>
-<body class="bg-info bg-opacity-10">
+<body>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" >Tienda Deportes</a>
+      <a class="navbar-brand" id="tiendainicio">Tienda Deportes</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#tiendainicio">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contáctenos</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="#">Promociones</a>
+            <a class="nav-link" href="#promociones">Promociones</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -51,14 +52,17 @@
   </div>
   
   <figure class="text-center"><h1><u>Tienda Deportes</u></h1></figure>
-  <h2>Promociones</h2>
+  <h2 id="promociones">Promociones</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
           <img src="./imagen4.jpg" class="card-img-top" alt="Conjunto deportivo">
           <div class="card-body">
             <h5 class="card-title">Conjunto deportivo</h5>
-            <p class="card-text">Conjunto deportivo de entrenamiento color negro</p>
+            <p class="card-text">Conjunto deportivo de entrenamiento color negro<br>
+                 <a href="./Promocion1.html"> Ver más detalles </a>
+            </p>
+            
           </div>
           <div class="card-footer">
             <small class="text-muted">$5.000 ARS</small>
@@ -70,7 +74,9 @@
           <img src="./imagen2.jpg" class="card-img-top" alt="Zapatillas">
           <div class="card-body">
             <h5 class="card-title">Zapatillas</h5>
-            <p class="card-text">Zapatillas running Galaxy unisex color negro con suela rosa</p>
+            <p class="card-text">Zapatillas running Galaxy unisex color negro con suela rosa
+              <a href="./Promocion2.html"> Ver más detalles </a>
+            </p>
           </div>
           <div class="card-footer">
             <small class="text-muted">$12.000 ARS</small>
@@ -82,7 +88,9 @@
           <img src="./imagen5.jpg" class="card-img-top" alt="Buzo hoodie">
           <div class="card-body">
             <h5 class="card-title">Buzo hoodie</h5>
-            <p class="card-text">Buzo hoodie canguro color negro con capucha</p>
+            <p class="card-text">Buzo hoodie canguro color negro con capucha
+              <a href="./Promocion3.html"> Ver más detalles </a>
+            </p>
           </div>
           <div class="card-footer">
             <small class="text-muted">$4.000 ARS</small>
@@ -91,10 +99,12 @@
       </div>
     </div>
   
+    <div class="imagen_black">
     <img src="./black-friday-gea7109848_1280.png" class="img-fluid" alt="Imagen Black Friday">
-    
+    </div>
 
-    <div class="container text-center">
+
+    <div class="container text-center contenedor_texto_black">
       <div class="row justify-content-md-center">
         <div class="col-md-auto">
           <div class="alert alert-dark" role="alert">
@@ -108,44 +118,62 @@
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <button type="button" class="btn btn-outline-primary">Indumentaria</button>
+          <button type="button" class="btn btn-primary">Indumentaria</button>
         
         </div>
         <div class="col">
-          <button type="button" class="btn btn-outline-primary">Calzado</button>
+          <button type="button" class="btn btn-primary">Calzado</button>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-outline-primary">Accesorios</button>
+          <button type="button" class="btn btn-primary">Accesorios</button>
         </div>
       </div>
     </div>
 
-    <div class="card mb-3">
-      <img src="./ropa.jpg" class="card-img-top" alt="Foto indumentaria">
-      <div class="card-body">
-        <h5 class="card-title">Indumentaria</h5>
-        <p class="card-text">Toda la indumentaria que necesitas para tus deportes y tu día a día</p>
-        <p class="card-text"><small class="text-muted">Conjuntos, buzos, pantalones, leggins, etc.</small></p>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./ropa.jpg" class="card-img-top" alt="indumentaria">
+          <div class="card-body">
+            <h5 class="card-title">Indumentaria</h5>
+            <p class="card-text">Toda la indumentaria que necesitas para los deportes y tu día a día.</p>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="col">
+        <div class="card">
+          <img src="./zapatillas.jpg" class="card-img-top" alt="zapatillas">
+          <div class="card-body">
+            <h5 class="card-title">Calzado</h5>
+            <p class="card-text">Encuentra el calzado ideal para cada una de tus actividades diarias.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./accesorios.jpg" class="card-img-top" alt="accesorios">
+          <div class="card-body">
+            <h5 class="card-title">Accesorios</h5>
+            <p class="card-text">Accesorios ideales para mejorar el rendimiento físico.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+          <img src="./club.jpg" class="card-img-top" alt="pelotaclub">
+          <div class="card-body">
+            <h5 class="card-title">Clubes</h5>
+            <p class="card-text">Camisetas, conjuntos y accesorios de tu club preferido.</p>
+          </div>
+        </div>
+      </div>
+    
+      <footer>
+        
+        <p class="text-center">© 2022 Tienda Deportes. All rights reserved.</p>
+      </footer>
 
-    <div class="card mb-3">
-      <img src="./zapatillas.jpg" class="card-img-top" alt="Foto zapatillas">
-      <div class="card-body">
-        <h5 class="card-title">Calzado</h5>
-        <p class="card-text">Encuentra el calzado ideal para cada una de tus actividades</p>
-        <p class="card-text"><small class="text-muted">Zapatillas, zapatos, etc.</small></p>
-      </div>
-    </div>
-
-    <div class="card mb-3">
-      <img src="./accesorios.jpg" class="card-img-top" alt="Foto accesorios">
-      <div class="card-body">
-        <h5 class="card-title">Accesorios</h5>
-        <p class="card-text">Accesorios ideales para todos tus ejercicios deportivos</p>
-        <p class="card-text"><small class="text-muted">Pesas, bandas elásticas, pelotas, etc.</small></p>
-      </div>
-    </div>
+    
 
   </body>
 
